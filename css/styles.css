@@ -1,0 +1,387 @@
+/*.kaisei-decol-regular {
+  font-family: "Kaisei Decol", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#home {
+    /*imagem de fundo no home*/
+    height: 100vh;
+    background: url("../img/background-kitsune-ansoen.png") center center no-repeat;
+    background-size: cover;
+}
+
+#home h1 {
+    font-family: "Kaisei Decol", serif;
+    font-size: 4rem;
+}
+
+#home p {
+    font-size: 1.5rem;
+}
+
+#about {
+    height: 100vh;
+}
+
+#social {
+    height: 100vh;
+}
+
+#contact {
+    height: 100vh;
+}
+
+#privacy {
+    height: 170vh
+}
+
+.scroll-btn {
+    margin-top: 30px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer a:hover {
+    color: #aaa;
+    transition: color 0.2s ease;
+}
+
+.social-icons a svg {
+    transition: transform 0.2s ease;
+}
+
+.social-icons a:hover svg {
+    transform: scale(1.15);
+}
+
+.card {
+    flex: 1 1 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.img-artist:hover {
+    opacity: 95%;
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+
+}
+
+.img-hover {
+    position: relative;
+    width: auto;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 0.25rem;
+}
+
+.img-hover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.img-hovered {
+    opacity: 0;
+}
+
+.card:hover .img-hovered {
+    opacity: 1;
+}
+
+.card:hover .img-default {
+    opacity: 0;
+}
+
+.more-text {
+    display: none;
+}
+
+.read-more {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    color: gray;
+    text-decoration: none;
+}
+
+.more-characters-text {
+    display: none;
+}
+
+.more-characters {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.more-characters:hover {
+    color: gray;
+    text-decoration: none;
+}
+
+#intro {
+    height: 100vh;
+    /*animation: subtle-bounce 3s ease-in-out infinite;*/
+}
+
+/*@keyframes subtle-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}*/
+
+.scroll-down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+}
+
+.scroll-down span {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    transform: rotate(-45deg);
+    animation: scroll 1.5s infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: rotate(-45deg) translate(0, 0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(-45deg) translate(-10px, 10px);
+        opacity: 0;
+    }
+}
+
+.kitsune-bg {
+    position: relative;
+    background-image: url("../img/kitsune1-ansoen.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 10%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.kitsune-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+#kitsune {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.ninjin-bg {
+    position: relative;
+    background-image: url("../img/ninjin1-ansoen.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 15%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.ninjin-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+#ninjin {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.yuki-bg {
+    position: relative;
+    background-image: url("../img/yuki1-ansoen.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 15%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.yuki-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+#yuki {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.kai-bg {
+    position: relative;
+    background-image: url("../img/kai1-ansoen.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 20%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.kai-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+#kai {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.taka-bg {
+    position: relative;
+    background-image: url("../img/taka1-ansoen.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 10%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.taka-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+#taka {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.character-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 80%;
+    transform: translateX(-50%);
+    height: 500px;
+    transition: opacity 1.5s ease-in-out;
+}
+
+/*fade*/
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+body {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Kaisei Decol", serif;
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+    z-index: 9999;
+    animation: fadeOut 2s ease 2s forwards;
+}
