@@ -347,7 +347,7 @@ footer {
     bottom: 0;
     left: 80%;
     transform: translateX(-50%);
-    height: 500px;
+    height: 800px;
     transition: opacity 1.5s ease-in-out;
 }
 
@@ -414,6 +414,19 @@ h1 {
         font-size: 1rem !important;
     }
 
+    #kitsune,
+    #ninjin,
+    #yuki,
+    #kai,
+    #taka {
+        height: 1000px;
+    }
+
+    #character-img {
+        height: 400px;
+        padding-left: 100px;
+    }
+
     .navbar-brand img {
         height: 40px;
     }
@@ -441,4 +454,5 @@ h1 {
     h2 {
         font-size: large;
     }
+
 }
