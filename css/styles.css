@@ -385,3 +385,60 @@ body.loaded {
     z-index: 9999;
     animation: fadeOut 2s ease 2s forwards;
 }
+
+h1 {
+    font-size: 3rem;
+    /* desktop */
+}
+
+/* Moblile ajust */
+
+/* YouTube video*/
+#social iframe {
+    width: 100%;
+    height: auto;
+    max-width: 560px;
+    aspect-ratio: 16 / 9;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Small screen spacing */
+@media (max-width: 768px) {
+
+    #about {
+        height: auto;
+    }
+
+    #home p {
+        font-size: 1rem !important;
+    }
+
+    .navbar-brand img {
+        height: 40px;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+
+    #character .card {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    h1 {
+        font-size: 1.8rem !important;
+        /* força o tamanho no mobile */
+    }
+
+    h2 {
+        font-size: large;
+    }
+}
