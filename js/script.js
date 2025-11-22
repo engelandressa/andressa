@@ -1,17 +1,33 @@
 // smooth scroll
 $(".scroll-btn, .nav-link").on("click", function (event) {
-    if (this.hash !== "") {
-        event.preventDefault();
-        const hash = this.hash;
-        $("html, body").animate({
-            scrollTop: $(hash).offset().top - 70
-        }, 300);
-    }
+  if (this.hash !== "") {
+    event.preventDefault();
+    const hash = this.hash;
+    $("html, body").animate({
+      scrollTop: $(hash).offset().top - 70
+    }, 300);
+  }
 });
 
+//navbar hide mobile
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll(".navbar-collapse .nav-link");
+  const navbarCollapse = document.querySelector(".navbar-collapse");
+
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      // Fecha o menu hamburguer caso esteja aberto
+      if (navbarCollapse.classList.contains("show")) {
+        $('.navbar-collapse').collapse('hide');
+      }
+    });
+  });
+});
+
+
 //read more card
-$(document).ready(function(){
-  $(".ler-mais").click(function(e){
+$(document).ready(function () {
+  $(".ler-mais").click(function (e) {
     e.preventDefault();
     const card = $(this).closest(".card");
     const moreText = card.find(".more-text");
@@ -116,16 +132,16 @@ $('#imageModal').on('show.bs.modal', function (event) {
 });
 
 // Botão próximo
-$('#nextImage').click(function(){
-  if(currentImages.length > 1){
+$('#nextImage').click(function () {
+  if (currentImages.length > 1) {
     currentIndex = (currentIndex + 1) % currentImages.length;
     $('#modalImage').attr('src', currentImages[currentIndex]);
   }
 });
 
 // Botão anterior
-$('#prevImage').click(function(){
-  if(currentImages.length > 1){
+$('#prevImage').click(function () {
+  if (currentImages.length > 1) {
     currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
     $('#modalImage').attr('src', currentImages[currentIndex]);
   }

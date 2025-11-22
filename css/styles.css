@@ -519,8 +519,54 @@ h1 {
     background: linear-gradient(to left, rgba(247, 247, 247, 1), rgba(255, 255, 255, 0));
 }
 
-/*formulario*/
+/* MOBILE: permitir arrastar com o dedo */
+@media (max-width: 768px) {
+    .reviews-track {
+        animation: none !important;
+        transform: none !important;
+        will-change: auto !important;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        scroll-snap-type: x mandatory;
+        gap: 10px;
 
+    }
+
+    .review-card {
+        display: inline-block;
+        min-width: 200px;
+        scroll-snap-align: start;
+        margin-right: 16px;
+        max-width: 80%;
+        scroll-snap-align: start;
+        box-sizing: border-box;
+        white-space: normal !important;
+        margin-bottom: 3rem;
+    }
+
+    /* opcional: esconder scrollbar 
+    .reviews-track::-webkit-scrollbar {
+        display: ;
+    }
+*/
+    .review-card p,
+    .review-card .review-text,
+    .review-card .review-author {
+        white-space: normal !important;
+        /* permite quebrar linha normalmente */
+        display: block;
+    }
+
+    /* impedir que o conteúdo cresça além do card */
+    .review-card {
+        white-space: normal !important;
+    }
+}
+
+
+
+/*formulario*/
 input:focus,
 textarea:focus {
     outline: none;
@@ -541,14 +587,17 @@ textarea:focus {
     position: fixed;
     width: 60px;
     height: 60px;
-    bottom: 20px; /* distância do rodapé */
-    right: 20px;  /* distância da lateral direita */
-    background-color: #25D366; /* verde WhatsApp */
+    bottom: 20px;
+    /* distância do rodapé */
+    right: 20px;
+    /* distância da lateral direita */
+    background-color: #25D366;
+    /* verde WhatsApp */
     color: white;
     border-radius: 50%;
     text-align: center;
     font-size: 30px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     z-index: 1000;
     display: flex;
     align-items: center;
