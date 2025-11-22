@@ -14,24 +14,103 @@
     <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap" rel="stylesheet">
 
 
-    <!-- Título que aparece na prévia -->
+    <!-- OPEN GRAPH (Facebook, WhatsApp, LinkedIn) -->
     <meta property="og:title" content="Atilar Cadernos">
-    <!-- Descrição que aparece no compartilhamento -->
     <meta property="og:description" content="Aqui você entra no mundo maravilhoso do livro artesanal.">
-    <!-- URL do site -->
-    <meta property="og:url" content="">
-    <!-- Tipo de conteúdo (site, artigo, vídeo...) -->
+    <meta property="og:url" content="https://atilarcadernos.vercel.app/">
     <meta property="og:type" content="website">
-    <!-- Imagem da prévia (de preferência 1200x630px) -->
-    <meta property="og:image" content=" ">
+    <meta property="og:image"
+        content="https://atilarcadernos.vercel.app/img/encomendas-especiais-atilar-artesanal-kimono-2.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- TWITTER CARD -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Atilar Cadernos">
+    <meta name="twitter:description" content="Aqui você entra no mundo maravilhoso do livro artesanal.">
+    <meta name="twitter:image"
+        content="https://atilarcadernos.vercel.app/img/encomendas-especiais-atilar-artesanal-kimono-2.png">
+    <meta name="twitter:url" content="https://atilarcadernos.vercel.app/">
+
+    <!-- META -->
+    <meta name="description"
+        content="Cadernos artesanais feitos à mão, planners, agendas e encomendas especiais criadas com cuidado e originalidade pela Atilar Cadernos.">
+    <meta name="keywords"
+        content="cadernos artesanais, planner artesanal, agenda artesanal, encadernação manual, atilar cadernos, cadernos feitos à mão, papelaria artesanal">
+    <meta name="author" content="Atilar Cadernos">
+    <meta http-equiv="Content-Language" content="pt-BR">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//stackpath.bootstrapcdn.com">
+    <link rel="manifest" href="/manifest.json">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Atilar Cadernos Artesanais",
+  "url": "https://atilarcadernos.vercel.app/",
+  "logo": "https://atilarcadernos.vercel.app/img/atilar-logo.png",
+  "description": "Cadernos artesanais feitos à mão, planners, álbuns e produtos exclusivos com acabamento profissional.",
+  "sameAs": [
+    "https://www.instagram.com/atilar.cadernos/",
+ 
+  ],
+  
+  "founder": {
+    "@type": "Person",
+    "name": "Regina Yoshida",
+    "description": "Artesã que cria cadernos artesanais feitos à mão com técnicas tradicionais e visuais modernos.",
+    "url": "https://atilarcadernos.vercel.app/"
+  },
+
+  "makesOffer": [
+    {
+      "@type": "Product",
+      "name": "Cadernos Artesanais",
+      "image": "https://atilarcadernos.vercel.app/img/encomendas-especiais-atilar-artesanal-kimono-2.png",
+      "description": "Cadernos únicos feitos à mão com costura artesanal, capas personalizadas e materiais de alta qualidade.",
+      "brand": "Atilar Cadernos",
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "priceCurrency": "BRL",
+        "price": "Sob consulta"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "Planners Artesanais",
+      "image": "https://atilarcadernos.vercel.app/img/caderno-planner-agenda-atilar-artesanal-kimono-2.png",
+      "description": "Planners artesanais feitos à mão com layouts exclusivos e acabamento premium.",
+      "brand": "Atilar Cadernos",
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "priceCurrency": "BRL",
+        "price": "Sob consulta"
+      }
+    }
+  ],
+
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+55 11 91741-0210",
+    "contactType": "customer service",
+    "availableLanguage": ["Portuguese"],
+    "areaServed": "BR"
+  }
+}
+</script>
+
+
 </head>
 
 <body>
 
-    <!--preloader-->
-    <div id="preloader">
-        <div class="loader"></div>
-    </div>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
         <a class="navbar-brand" href="index.html"><img src="img/atilar-logo-transparente.png" alt="Atilar Cadernos"
@@ -472,14 +551,6 @@
             </div>
         </div>
     </div>
-
-    <script>
-        window.addEventListener("load", function () {
-            const preloader = document.getElementById("preloader");
-            preloader.classList.add("fade-out");
-            setTimeout(() => preloader.style.display = "none", 400);
-        });
-    </script>
 
     <script>
         document.getElementById("contactForm").addEventListener("submit", function (e) {
