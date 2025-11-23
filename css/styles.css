@@ -103,8 +103,10 @@ section {
 }
 
 #privacidade {
-    height: 2000px;
+    width: 100%;
     text-align: left;
+    padding: 60px 20px;
+    box-sizing: border-box;
 }
 
 .scroll-btn {
