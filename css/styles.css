@@ -103,7 +103,7 @@ section {
 }
 
 #privacidade {
-    height: 170vh
+    height: auto;
 }
 
 .scroll-btn {
