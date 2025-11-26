@@ -1,8 +1,8 @@
 :root {
-    --clara: #f9c9bd !important;
-    --media: #f9b6ad !important;
-    --destaque: #f26a6c !important;
-    --escura: #ae5250 !important;
+    --clara: #b7aba7 !important;
+    --media: #87756e !important;
+    --destaque: #4c4c4c !important;
+    --escura: #1c1c1c !important;
 }
 
 html {
@@ -88,7 +88,7 @@ section {
 }
 
 
-#sobre,
+#about,
 #onde,
 #contato,
 #produto {
@@ -97,7 +97,7 @@ section {
     text-align: center;
 }
 
-#sobre h2 {
+#about h2 {
     font-family: "Kaisei Decol", serif;
     font-size: 2rem;
 }
@@ -401,7 +401,7 @@ h1 {
 @media (max-width: 768px) {
 
     #onde,
-    #sobre,
+    #about,
     #contato,
     #produto {
         height: auto !important;
