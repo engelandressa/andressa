@@ -119,30 +119,3 @@ document.addEventListener("DOMContentLoaded", function () {
   // Executa no carregamento inicial
   onScroll();
 });
-
-//pop up imagens
-let currentImages = [];
-let currentIndex = 0;
-
-$('#imageModal').on('show.bs.modal', function (event) {
-  const button = $(event.relatedTarget); // link que abriu o modal
-  currentImages = button.data('images'); // pega as imagens do card
-  currentIndex = 0;
-  $('#modalImage').attr('src', currentImages[currentIndex]);
-});
-
-// Botão próximo
-$('#nextImage').click(function () {
-  if (currentImages.length > 1) {
-    currentIndex = (currentIndex + 1) % currentImages.length;
-    $('#modalImage').attr('src', currentImages[currentIndex]);
-  }
-});
-
-// Botão anterior
-$('#prevImage').click(function () {
-  if (currentImages.length > 1) {
-    currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
-    $('#modalImage').attr('src', currentImages[currentIndex]);
-  }
-});

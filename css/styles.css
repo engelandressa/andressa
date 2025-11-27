@@ -89,9 +89,7 @@ section {
 
 
 #about,
-#onde,
-#contato,
-#produto {
+#contato {
     height: 100vh;
     justify-content: center;
     text-align: center;
@@ -363,16 +361,6 @@ section {
     }
 }
 
-
-.produto-bottom {
-    position: absolute;
-    bottom: 0;
-    left: 80%;
-    transform: translateX(-50%);
-    height: 800px;
-    transition: opacity 1.5s ease-in-out;
-}
-
 /*fade*/
 @keyframes fadeOut {
     to {
@@ -400,10 +388,8 @@ h1 {
 /* Small screen spacing */
 @media (max-width: 768px) {
 
-    #onde,
     #about,
-    #contato,
-    #produto {
+    #contato {
         height: auto !important;
     }
 
@@ -422,10 +408,6 @@ h1 {
         /* Centraliza texto */
     }
 
-    #produto-img {
-        height: 400px;
-    }
-
     .navbar-brand img {
         height: 40px;
     }
@@ -433,11 +415,6 @@ h1 {
     .btn {
         font-size: 0.9rem;
         padding: 0.5rem 1rem;
-    }
-
-    #produto .card {
-        width: 90%;
-        margin: 0 auto;
     }
 
     section {
@@ -586,34 +563,4 @@ textarea:focus {
     color: var(--destaque) !important;
     opacity: 60% !important;
 
-}
-
-/*whatsapp icone*/
-
-.whatsapp-float {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 20px;
-    /* distância do rodapé */
-    right: 20px;
-    /* distância da lateral direita */
-    background-color: #25D366;
-    /* verde WhatsApp */
-    color: white;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background 0.3s, transform 0.3s;
-}
-
-.whatsapp-float:hover {
-    background-color: #20b858;
-    transform: scale(1.1);
-    color: white;
 }
